@@ -4664,7 +4664,7 @@ angular.module('ui.bootstrap.paging', [])
       };
 
       $scope.getPageUrl = function(page) {
-        let currentPageUrl = window.location.pathname + window.location.search;
+        var currentPageUrl = window.location.pathname + window.location.search;
 
         // If page already exists, remove it
         if (currentPageUrl.indexOf('&page=') > 0) {
